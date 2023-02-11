@@ -1,0 +1,329 @@
+/*Selector Universal*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selector Etiquetas e Hijos*/
+
+h1 {
+	font-weight: 600;
+	margin: 0;
+    transition: 1s;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #A2D5AC;
+	background-color: #A2D5AC;
+	color: #000;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+    background-color: #54A764;
+}
+
+form {
+	background-color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 5vh 8vw;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+	background-color: #F5F5DC;
+    color: #000;
+    border: none;
+	border-radius: 10px;
+	padding: 1.5vh 1vw;
+	margin: 1.5vh 0;
+	width: 100%;
+    transition: 1s;
+    outline: none;
+}
+
+input:focus {
+    transition: 1ms;
+    outline: 2px solid #000;
+}
+
+input::placeholder {
+    color: #7E7E7E;
+}
+
+/*Selectores de ID*/
+
+/*Selectores de Clases*/
+
+.classgrandiv2 {
+	background: #F5F5DC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'poppins', sans-serif;
+	height: 90vh;
+	margin: -4px 0 0;
+    transition: 1s;
+}
+
+.classgrandiv2.activo {
+    background: #444;
+}
+
+.classgrandiv2.activo form {
+    background: #222;
+}
+
+.classgrandiv2.activo form h1 {
+    color: #FFF;
+}
+
+.classgrandiv2.activo form div a{
+    border: 1px solid #04445F;
+    background-color: #04445F;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+    cursor: pointer;
+}
+
+.classgrandiv2.activo form span{
+    color: #FFF;
+}
+
+.classgrandiv2.activo form ul li a{
+    color: #FFF;
+}
+
+.classgrandiv2.activo form input {
+    font-family: 'Poppins', sans-serif;
+	background-color: #444;
+    color: #FFF;
+    border: 0;
+	border-radius: 10px;
+	padding: 1.5vh 1vw;
+	margin: 1.5vh 0;
+	width: 100%;
+}
+
+.classgrandiv2.activo form input:focus {
+    transition: 1ms;
+    outline: 2px solid #FFF;
+}
+
+.classgrandiv2.activo form input::placeholder {
+    color: #7E7E7E;
+}
+
+.ini {
+	background-color: #FFF;
+    border: none;
+	border-radius: 15px;
+  	box-shadow: 0 32px 28px #00000025, 
+			    0 16px 14px #00000025,
+                0 8px 7px #00000025;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+	width: 35vw;
+    height: 70vh;
+}
+
+.ini.activo {
+    background-color: #FFF;
+    border: none;
+	border-radius: 15px;
+  	box-shadow: 0 32px 28px #FFFFFF25, 
+			    0 16px 14px #FFFFFF25,
+                0 8px 7px #FFFFFF25;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+	width: 35vw;
+    height: 70vh;
+}
+
+.divbutton button p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color: #000;
+    transition: 1s;
+}
+
+.ini.activo button {
+    border: none;
+    background-color: #04445f;
+    
+}
+
+.ini.activo button:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+.ini.activo button p {
+    color: #FFF;
+}
+
+.ini.activo button:hover {
+    background-color: #557C83;
+}
+
+.divredes {
+	margin: 20px 0;
+}
+
+.divredes a {
+	border: 1px solid #DDDDDD;
+    background-color: #A2D5AC;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+    cursor: pointer;
+}
+
+.divredes a:hover:active {
+    transition: 0.2s;
+    transform: scale(0.95);
+}
+
+.divredes a i {
+    transition: 1s;
+}
+
+.divredes a:hover {
+    background-color: #54A764;
+    transform: scale(1.2);
+}
+
+.divredes.activo a:hover:active{
+    background-color: #04445f;
+    transform: scale(0.95);
+}
+
+.divredes.activo a:hover {
+    background-color: #557C83;
+    transform: scale(1.2);
+}
+
+.divredes.activo a i {
+    color: #FFF;
+}
+
+.links {
+    margin: auto;
+    text-align: center;
+}
+
+.links li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.links li a {
+    margin: 0;
+    padding: 0.5vh 0.2vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1) ;
+  }
+
+  .underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.classgrandiv2.activo form ul li .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    transform-origin: bottom right;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.classgrandiv2.activo form ul li .underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*Selectores Anidados*/
+

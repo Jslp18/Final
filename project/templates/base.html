@@ -8,7 +8,7 @@
     <!-- Bloque para incluir etiquetas adicionales en la cabecera  -->
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" media="screen"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    {% block extrahead %}  
+    {% block extrahead %}
     {% endblock extrahead%}
 </head>
 <body>
@@ -27,17 +27,17 @@
             </div>
             <div id="divc">
                 <ul id="list">
-                    <li><a href = "PP.html">PAGINA PRINCIPAL</a></li>
+                    <li><a href = "{% url 'home' %}">PAGINA PRINCIPAL</a></li>
                     <li><a href = "PRODUCTOS.html">PRODUCTOS</a></li>
                     <li><a href = "SERVICIOS.html">SERVICIOS</a></li>
                     <li><a href = "NUESTROTRABAJO.html">NUESTRO TRABAJO</a></li>
-                    <li><a href = "SOBRENOSOTROS.html">SOBRE NOSOTROS</a></li>
-                    <li><a href = "CONTACTO.html">CONTACTO</a></li>
+                    <li><a href = "{% url 'sn' %}">SOBRE NOSOTROS</a></li>
+                    <li><a href = "#">CONTACTO</a></li>
                 </ul>
             </div>
             <div id="divr">
                 <ul id="list2">
-                    <li><a href = "LOGIN.html">LOGIN</a></li>
+                    <li><a href = "{% url 'login' %}">LOGIN</a></li>
                 </ul>
             </div>
         </div>

@@ -11,3 +11,11 @@ def home(request):
     context = {}
     #Respuesta
     return HttpResponse(template.render(context,request))
+
+def sn(request):
+    #Archivo HTML con template
+    template = loader.get_template('SOBRENOSOTROS.html')
+    #Lógica de la vista
+    context = {}
+    #Respuesta
+    return HttpResponse(template.render(context,request))

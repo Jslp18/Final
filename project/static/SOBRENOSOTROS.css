@@ -1,0 +1,391 @@
+/*Selector Universal*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selector Etiquetas e Hijos*/
+
+h1 {
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+    transition: 1s;
+}
+
+h5 {
+    font-weight: 500;
+	text-align: center;
+    margin: 5vh 0vw;
+    padding: 0;
+    font-size: large;
+    letter-spacing: 8px;
+    color: #000;
+    transition: 1s;
+}
+
+p {
+	margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    transition: 1s;
+    max-width: 25vw;
+    max-height: 40vh;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/*Selectores de ID*/
+
+#grandiv {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 10vh;
+    display: inline-block;
+}
+
+#divl {
+    height: 10vh;
+    width: 20vw;
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A2D5AC;
+    transition: 1s;
+}
+
+#divc {
+    float: left;
+    height: 10vh;
+    width: 65vw;
+    background-color: #A2D5AC;
+    transition: 1s;
+}
+
+#divc ul {
+    margin: auto;
+    text-align: center;
+    height: 10vh;
+    width: 65vw;
+}
+
+#divc ul li{
+    margin: 0;
+    padding: 3.5vh 0vw;
+    display: inline-block;
+}
+
+#divc ul li:hover {
+    background-color: #54A764;
+}
+
+#divc.activo ul li:hover {
+    background-color: #557C83;
+}
+
+#divc ul li a {
+    margin: 0;
+    padding: 3.5vh 1.7vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#divr {
+    float: left;
+    height: 10vh;
+    width: 15vw;
+    background-color: #A2D5AC;
+    transition: 1s;
+}
+
+#divr ul {
+    margin: auto;
+    text-align: center;
+    height: 10vh;
+    width: 15vw;
+}
+
+#divr ul li{
+    margin: 0;
+    padding: 3.5vh 0vw;
+    display: inline-block;
+}
+
+#divr ul li:hover {
+    background-color: #54A764;
+}
+
+#divr.activo ul li:hover {
+    background-color: #557C83;
+}
+
+#divr ul li a {
+    margin: 0;
+    padding: 3.5vh 2.2vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#divl.activo {
+    background-color: #04445f;
+}
+
+#divc.activo {
+    background-color: #04445f;
+}
+
+#divc.activo ul li a{
+    color: #FFF;
+}
+
+#divr.activo {
+    background-color: #04445f;
+}
+
+#divr.activo ul li a {
+    color: #FFF;
+}
+
+#btn2.activo p {
+    transition: 1s;
+    color: #FFF;
+}
+
+#btn {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 200px;
+    background: #fff;
+    box-shadow: inset 0 1px 30px rgba(0, 0, 0, 0.1),
+                inset 0 1px 4px rgba(0, 0, 0, 0.1),
+                inset 0 -2px 2px rgba(0, 0, 0, 0.05);
+    transition: 1s;
+}
+
+#btn.activo {
+    background: #222;
+    box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.1), 
+                inset 0 4px 4px rgba(0, 0, 0, 0.1), 
+                inset 0 -2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#btn .indicador {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, #FAF4F4, #DDDADA);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+                inset 0 2px 2px rgba(255, 255, 255, 1),
+                inset 0 -2px 2px rgba(255, 255, 255, 1);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+#btn.activo .indicador {
+    left: 40px;
+    background: linear-gradient(to bottom, #444, #222);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5),
+                inset 0 2px 2px rgba(255, 255, 255, 0.2),
+                inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+}
+
+
+/*Selectores de Clases*/
+
+.btnr {
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 10vw;
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnr p{
+    margin: 0;
+    padding: 4vh 0.8vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    color: black;
+    transition: 1s;
+}
+
+.classgrandiv2 {
+	background: #F5F5DC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	font-family: 'poppins', sans-serif;
+	height: 90vh;
+	margin: -4px 0 0;
+    transition: 1s;
+}
+
+.sobrenos {
+    background-color: #FFF;
+    border: none;
+	border-radius: 15px;
+  	box-shadow: 0 32px 28px #00000025, 
+			    0 16px 14px #00000025,
+                0 8px 7px #00000025;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+	width: 80vw;
+    height: 70vh;
+}
+
+.sobrenos.activo {
+    background-color: #FFF;
+    border: none;
+	border-radius: 15px;
+  	box-shadow: 0 32px 28px #FFFFFF25, 
+			    0 16px 14px #FFFFFF25,
+                0 8px 7px #FFFFFF25;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+	width: 80vw;
+    height: 70vh
+}
+
+.imagen {
+    margin: 0;
+    padding: 0;
+    width: 45vw;
+    height: 70vh;
+    position: relative;
+    float: left;
+}
+
+.texto {
+    background-color: #FFF;
+	display: flex;
+    position: relative;
+    float: left;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    width: 35vw;
+    height: 70vh;
+	padding: 5vh 8vw;
+	height: 100%;
+	text-align: center;
+    transition: 1s;
+}
+
+.texto.activo {
+    background-color: #222;
+}
+
+.texto.activo h1{
+    color: #FFF;
+}
+
+.texto.activo h5{
+    color: #FFF;
+}
+
+.texto.activo p{
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.texto.activo p:focus {
+    transition: 1ms;
+    outline: 2px solid #FFF;
+}
+
+.texto.activo p::placeholder {
+    color: #7E7E7E;
+}
+
+
+.texto a {
+	border-radius: 20px;
+	border: 1px solid #A2D5AC;
+	background-color: #A2D5AC;
+    text-decoration: none;
+	padding: 12px 45px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin-top: 8vh;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.texto a .cont {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color: #000;
+    transition: 1s;
+}
+
+.texto.activo a .cont {
+    color: #FFF;
+}
+
+.texto.activo a {
+    border: none;
+    background-color: #04445f;
+}
+
+.texto a:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+.texto.activo a:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+.texto.activo a:hover {
+    background-color: #557C83;
+}
+
+.texto a:focus {
+	outline: none;
+}
+
+.texto a:hover {
+    background-color: #54A764;
+}
+
+.classgrandiv2.activo {
+    background: #444;
+}
+
+/*Selectores Anidados*/
+
