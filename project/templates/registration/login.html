@@ -9,8 +9,13 @@
 
 {% block content %}
     <div id="grandiv2" class="classgrandiv2">
+        {% if messages %}
+        {% for mensaje in messages %}
+        <h5 id="mensaje" class="spanmensaje">{{mensaje}}</h5>
+        {% endfor %}
+        {% endif %}
         <div id="divform" class="ini">
-            <form methond="post" action="#" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
                 <h1>Iniciar Sesión</h1>
                 <div id="redes" class="divredes">
@@ -34,5 +39,5 @@
 {% endblock content %}
     <!-- Bloque para incluir javascripts  -->
 {% block scripts %}
-    <script src="../../static/login.js"></script>
+    <script src="{% static 'login.js' %}"></script>
 {% endblock scripts %}

@@ -6,10 +6,8 @@ const btnl = document.getElementById('btn');
 const list = document.getElementById('list');
 const btn2 = document.getElementById('btn2');
 const mode = document.getElementById('mode');
-const redes = document.getElementById('redes');
 const divform = document.getElementById('divform');
 const grandiv2 = document.getElementById('grandiv2');
-const mensaje = document.getElementById('mensaje');
 btnl.onclick = function()
 {
     btnl.classList.toggle('activo');
@@ -18,7 +16,6 @@ btnl.onclick = function()
     divr.classList.toggle('activo');
     list.classList.toggle('activo');
     btn2.classList.toggle('activo');
-    redes.classList.toggle('activo');
     divform.classList.toggle('activo');
     grandiv2.classList.toggle('activo');
     if(a) {
@@ -29,8 +26,4 @@ btnl.onclick = function()
         a = true;
         mode.innerHTML = "MODO OSCURO";
     }
-}
-
-if(mensaje) {
-    grandiv2.classList.toggle('mensaje');
 }

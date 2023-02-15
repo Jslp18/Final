@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'crear_servicio.css' %}" media="screen"/>
+<title>Crear Servicio</title>
+{% endblock extrahead %}
+
+{% block content %}
+    <div id="grandiv2" class="classgrandiv2">
+        <div id="divform" class="ini">
+            <form method="post" enctype="multipart/form-data">
+                <h1>Crear Servicio</h1>
+                {% csrf_token %}
+                <input id="imagen" type="text" name="imagen" placeholder="Imagen">
+                <input id="titulo" type="text" name="titulo" placeholder="Título">
+                <input id="descripcion" type="text" name="descripcion" placeholder="Descripción">
+                <input id="precio" type="number" step="0.01" name="precio" placeholder="Precio">
+                <div class="divbutton">
+                    <button type="submit"><p>Crear Servicio</p></button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+<!-- Bloque para incluir javascripts  -->
+{% block scripts %}
+    <script src="{% static 'crear_servicio.js' %}"></script>
+{% endblock scripts %}

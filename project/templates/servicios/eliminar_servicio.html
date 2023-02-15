@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<title>Eliminar Servicio</title>
+<link rel="stylesheet" type="text/css" href="{% static 'eliminar_servicio.css' %}" media="screen"/>
+{% endblock extrahead %}
+
+{% block content %}
+    <div id="grandiv2" class="classgrandiv2">
+        <div id="divform" class="ini">
+            <form method="POST">
+                <!-- Security token by Django -->
+                {% csrf_token %}
+                <div class="pregunta">
+                    <h1>¿Desea eliminar este servicio?</h1>
+                </div>
+                <div class="divbutton">
+                    <button type="submit"><p>Sí</p></button>
+                    <a id="no" href="{% url 'servicios' %}"><p>No</p></a>
+                </div>
+            </form>
+        </div> 
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'eliminar_servicio.js' %}"></script>
+{% endblock scripts %}

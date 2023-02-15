@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extrahead %}
+<title>Detalle de Servicio</title>
+<link rel="stylesheet" type="text/css" href="{% static 'servicio_detalle.css' %}" media="screen"/>
+{% endblock extrahead %}
+
+{% block content %}
+  <div id="grandiv2" class="classgrandiv2">
+    <div id="about" class="sobrenos">
+        <img class="imagen" src="{{ object.imagen }}"></img>
+        <div id="text" class="texto">
+            <h1>Servicio #{{ object.id }}</h1>
+            <h5>{{ object.titulo }}</h5>
+            <p>{{ object.descripcion }}</p>
+            <h5>Precio: ${{ object.precio }}</h5>
+            <a href="#"><p class="cont">Adquiéralo</p></a>
+        </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'servicio_detalle.js' %}"></script>
+{% endblock scripts %}

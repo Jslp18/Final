@@ -55,6 +55,7 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
     cursor: pointer;
+    margin: 2vh 0vw;
 }
 
 button:active {
@@ -88,7 +89,7 @@ input {
     color: #000;
     border: none;
 	border-radius: 10px;
-	padding: 1.5vh 1vw;
+	padding: 2vh 1vw;
 	margin: 1.5vh 0;
 	width: 100%;
     transition: 1s;
@@ -188,7 +189,7 @@ input::placeholder {
 	position: relative;
 	overflow: hidden;
     margin: 0;
-	width: 35vw;
+	width: 50vw;
     height: 70vh;
 }
 
@@ -202,10 +203,13 @@ input::placeholder {
 	position: relative;
 	overflow: hidden;
     margin: 0;
-	width: 35vw;
+	width: 50vw;
     height: 70vh;
 }
 
+.ini.activo form .label {
+    color: #FFF;
+}
 .divbutton button p {
     margin: 0;
     padding: 0;
@@ -217,6 +221,7 @@ input::placeholder {
 }
 
 .ini.activo button {
+    margin: 2vh 0vw;
     border: none;
     background-color: #04445f;
     
@@ -235,108 +240,24 @@ input::placeholder {
     background-color: #557C83;
 }
 
-.divredes {
-	margin: 20px 0;
-}
-
-.divredes a {
-	border: 1px solid #A2D5AC;
-    background-color: #A2D5AC;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-    cursor: pointer;
-}
-
-.divredes a:hover:active {
-    transition: 0.2s;
-    transform: scale(0.95);
-}
-
-.divredes a i {
-    transition: 1s;
-}
-
-.divredes a:hover {
-    background-color: #54A764;
-    transform: scale(1.2);
-}
-
-.divredes.activo a:hover:active{
-    background-color: #04445f;
-    transform: scale(0.95);
-}
-
-.divredes.activo a:hover {
-    background-color: #557C83;
-    transform: scale(1.2);
-}
-
-.divredes.activo a i {
-    color: #FFF;
-}
-
-.links {
-    margin: auto;
-    text-align: center;
-}
-
-.links li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    position: relative;
-}
-
-.links li a {
-    margin: 0;
-    padding: 0.5vh 0.2vw;
+.classgrandiv2.activo form input {
     font-family: 'Poppins', sans-serif;
-    font-size: small;
-    font-weight: 500;
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+	background-color: #444;
+    color: #FFF;
+    border: 0;
+	border-radius: 10px;
+	padding: 2vh 1vw;
+	margin: 1.5vh 0;
+	width: 100%;
 }
 
-.underline::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1) ;
-  }
-
-  .underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-.classgrandiv2.activo form ul li .underline::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #FFF;
-    transform-origin: bottom right;
-    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+.classgrandiv2.activo form input:focus {
+    transition: 1ms;
+    outline: 2px solid #FFF;
 }
 
-.classgrandiv2.activo form ul li .underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.classgrandiv2.activo form input::placeholder {
+    color: #7E7E7E;
 }
 
 /*Selectores Anidados*/

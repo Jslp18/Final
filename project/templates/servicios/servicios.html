@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<title>Servicios</title>
+<link rel="stylesheet" type="text/css" href="{% static 'servicios.css' %}" media="screen"/>
+{% endblock extrahead %}
+
+{% block content %}
+<div id="grandiv2" class="classgrandiv2"> 
+  {% for servicio in servicios %}
+    <div id="about" class="sobrenos">
+      <div class="titulo">
+        <h1>{{ servicio.titulo }}</h1>
+      </div>
+      <div id="text" class="texto">
+        <a href="{% url 'info_servicio' servicio.id %}"><p class="cont">Detalles</p></a>
+        <a href="{% url 'actualizar_servicio' servicio.id %}"><p class="cont">Actualizar</p></a>
+        <a href="{% url 'eliminar_servicio' servicio.id %}"><p class="cont">Eliminar</p></a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="{% static 'servicios.js' %}"></script>
+{% endblock scripts %}
+
+

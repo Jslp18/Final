@@ -18,21 +18,19 @@
             <div id="divl">
                 <!--<a href = "PP.html">< Logo></a>--> 
                     <div id="btn">
-                        <i class="indicador"></i>
+                        <i id="indicador" class="indicador"></i>
                     </div>
                     <div id="btn2" class="btnr">
                         <p id="mode">MODO CLARO</p>
                     </div>
-                    
             </div>
             <div id="divc">
                 <ul id="list">
                     <li><a href = "{% url 'home' %}">PAGINA PRINCIPAL</a></li>
-                    <li><a href = "PRODUCTOS.html">PRODUCTOS</a></li>
-                    <li><a href = "SERVICIOS.html">SERVICIOS</a></li>
+                    <li><a href = "{% url 'servicios' %}">SERVICIOS</a></li>
                     <li><a href = "NUESTROTRABAJO.html">NUESTRO TRABAJO</a></li>
                     <li><a href = "{% url 'sn' %}">SOBRE NOSOTROS</a></li>
-                    <li><a href = "#">CONTACTO</a></li>
+                    <li><a href = "CONTACTO.html">CONTACTO</a></li>
                 </ul>
             </div>
             <div id="divr">
@@ -47,7 +45,7 @@
     {% endblock content %}
     <!-- Bloque para incluir javascripts  -->
     {% block scripts %}
-        <script src="../static/base.js"></script>
+        <script src="{% static 'base.js' %}"></script>
     {% endblock scripts %}
 </body>
 </html>

@@ -1,0 +1,200 @@
+/*Selector Universal*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Selector Etiquetas e Hijos*/
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    transition: 1s;
+}
+
+
+/*Selectores de ID*/
+
+
+
+/*Selectores de Clases*/
+
+.classgrandiv2 {
+	background: #F5F5DC;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	box-direction: column;
+	font-family: 'poppins', sans-serif;
+	height: 90vh;
+	margin: -4px 0 0;
+    padding: 2vh 0vw;
+    transition: 1s;
+    overflow-y: scroll;
+}
+
+.classgrandiv2 .sobrenos {
+    background-color: #FFF;
+    border: none;
+	border-radius: 20px;
+  	box-shadow: 0 32px 28px #00000025, 
+			    0 16px 14px #00000025,
+                0 8px 7px #00000025;
+	position: relative;
+    overflow: visible;
+    margin: 2vh 0vw;
+	width: 50vw;
+    height: 40vh;
+    transition: 1s;
+}
+
+.classgrandiv2.activo {
+    background: #444;
+}
+
+.classgrandiv2.activo .sobrenos {
+    background-color: #222;
+    border: none;
+	border-radius: 20px;
+  	box-shadow: 0 32px 28px #FFFFFF25, 
+			    0 16px 14px #FFFFFF25,
+                0 8px 7px #FFFFFF25;
+	position: relative;
+	overflow: hidden;
+    margin: 2vh 0vw;
+	width: 50vw;
+    height: 40vh;
+}
+
+.classgrandiv2 .titulo {
+    background-color: #FFF;
+    border: none;
+	border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    position: relative;
+    float: left;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    height: 40vh;
+    transition: 1s;
+}
+
+.classgrandiv2.activo .sobrenos .titulo {
+    background-color: #222;
+}
+
+.classgrandiv2.activo .sobrenos .titulo h1 {
+    color: #FFF;
+}
+
+.classgrandiv2 .texto {
+    background-color: #FFF;
+    border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+    position: relative;
+    float: left;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    width: 20vw;
+    height: 40vh;
+	padding: 5vh 0vw;
+	text-align: center;
+    transition: 1s;
+}
+
+.classgrandiv2 .texto a {
+	border-radius: 20px;
+	border: 1px solid #A2D5AC;
+	background-color: #A2D5AC;
+    text-decoration: none;
+	padding: 12px 45px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    cursor: pointer;
+    margin: 2vh 1vw;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.classgrandiv2 .texto a .cont {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color: #000;
+    transition: 1s;
+}
+
+.classgrandiv2 .texto a:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+.classgrandiv2 .texto a:focus {
+	outline: none;
+}
+
+.classgrandiv2 .texto a:hover {
+    background-color: #54A764;
+}
+
+.classgrandiv2.activo .texto{
+    background-color: #222;
+}
+
+.classgrandiv2.activo .texto h1{
+    color: #FFF;
+}
+
+.classgrandiv2.activo .texto h5{
+    color: #FFF;
+}
+
+.classgrandiv2.activo .texto p{
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.classgrandiv2.activo .texto p:focus {
+    transition: 1ms;
+    outline: 2px solid #FFF;
+}
+
+.classgrandiv2.activo .texto p::placeholder {
+    color: #7E7E7E;
+}
+
+.classgrandiv2.activo .texto a .cont {
+    color: #FFF;
+}
+
+.classgrandiv2.activo .texto a {
+    border: none;
+    background-color: #04445f;
+}
+
+.classgrandiv2.activo .texto a:active {
+    transition: 0.2s;
+	transform: scale(0.95);
+}
+
+.classgrandiv2.activo .texto a:hover {
+    background-color: #557C83;
+}
+
+/*Selectores Anidados*/
+

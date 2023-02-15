@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'actualizar_servicio.css' %}" media="screen"/>
+<title>Actualizar Servicio</title>
+{% endblock extrahead %}
+
+{% block content %}
+    <div id="grandiv2" class="classgrandiv2">
+        <div id="divform" class="ini">
+            <form method="post" enctype="multipart/form-data">
+                <h1>Actualizar Servicio</h1>
+                {% csrf_token %}
+                <input id="imagen" type="text" name="imagen" value="{{object.imagen}}" placeholder="Imagen">
+                <input id="titulo" type="text" name="titulo" value="{{object.titulo}}" placeholder="Título">
+                <input id="descripcion" type="text" name="descripcion" value="{{object.descripcion}}" placeholder="Descripción">
+                <input id="precio" type="number" step="0.01" name="precio" value="{{object.precio}}" placeholder="Precio">
+                <div class="divbutton">
+                    <button type="submit"><p>Actualizar Servicio</p></button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+<!-- Bloque para incluir javascripts  -->
+{% block scripts %}
+    <script src="{% static 'actualizar_servicio.js' %}"></script>
+{% endblock scripts %}

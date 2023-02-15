@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 from pathlib import Path
+from django.contrib.messages import constants as mensajes
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -125,7 +126,19 @@ STATICFILES_DIRS = ('static',)
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/accounts/login'
 
+#MEDIA CONFIGURATION
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MESSAGES_TAGS={
+    mensajes.DEBUG: 'debug',
+    mensajes.INFO: 'info',
+    mensajes.SUCCESS: 'success',
+    mensajes.WARNING: 'warning',
+    mensajes.ERROR: 'danger'
+}
